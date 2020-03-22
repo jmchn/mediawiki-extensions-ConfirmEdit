@@ -78,6 +78,13 @@
 		},
 		"ext.confirmEdit.simpleCaptcha": {
 			"styles": "../SimpleCaptcha/resources/ext.confirmEdit.simpleCaptcha.css"
+		},
+		"TCaptcha":{
+			"scripts": "TCaptcha.js",
+			"targets": [
+				"desktop",
+				"mobile"
+			]
 		}
 	},
 	"attributes": {
