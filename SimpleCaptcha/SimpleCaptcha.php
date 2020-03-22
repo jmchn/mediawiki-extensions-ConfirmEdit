@@ -125,29 +125,10 @@ class SimpleCaptcha {
 
 		return [
 			'html' =>
-				new OOUI\FieldLayout(
-					new OOUI\NumberInputWidget( [
-						'name' => 'wpCaptchaWord',
-						'classes' => [ 'simplecaptcha-answer' ],
-						'id' => 'wpCaptchaWord',
-						'autocomplete' => 'off',
-						// tab in before the edit textarea
-						'tabIndex' => $tabIndex
-					] ),
-					[
-						'align' => 'left',
-						'label' => $captcha['question'] . ' = ',
-						'classes' => [ 'simplecaptcha-field' ],
-					]
-				) .
-				new OOUI\HiddenInputWidget( [
-					'name' => 'wpCaptchaId',
-					'id' => 'wpCaptchaId',
-					'value' => $index
-				] ),
-			'modulestyles' => [
-				'ext.confirmEdit.simpleCaptcha'
-			]
+			"<button id='TencentCaptcha'
+			data-appid='2042052194'
+			data-cbfn='callback'
+			type='button'>验证</button>"
 		];
 	}
 
