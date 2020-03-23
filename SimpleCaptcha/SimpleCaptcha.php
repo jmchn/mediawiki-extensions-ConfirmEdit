@@ -128,7 +128,7 @@ class SimpleCaptcha {
 			"<button id='TencentCaptcha'
 			data-appid='2042052194'
 			data-cbfn='callback'
-			type='button'>验证</button>"
+			type='button'>验证按钮</button>"
 		];
 	}
 
@@ -1177,4 +1177,22 @@ class SimpleCaptcha {
 
 		return false;
 	}
+
+
+	// add script in the page header
+	public static function AddScript(OutputPage $out, Skin $skin)
+	{
+		$out ->addScriptFile("https://ssl.captcha.qq.com/TCaptcha.js");
+	}
 }
+?>
+<script type="text/javascript"> 
+window.callback = function(res){
+ //console.log(res)
+ // res（用户主动关闭验证码）= {ret: 2, ticket: null}
+ // res（验证成功） = {ret: 0, ticket: "String", randstr: "String"}
+//  if(res.ret === 0){
+//      alert(res.ticket)   // 票据
+//  }
+}
+</script> 

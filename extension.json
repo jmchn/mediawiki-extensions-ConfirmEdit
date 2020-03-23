@@ -108,7 +108,8 @@
 		"APIGetAllowedParams": "ConfirmEditHooks::onAPIGetAllowedParams",
 		"TitleReadWhitelist": "ConfirmEditHooks::onTitleReadWhitelist",
 		"AlternateEditPreview": "ConfirmEditHooks::onAlternateEditPreview",
-		"AuthChangeFormFields": "ConfirmEditHooks::onAuthChangeFormFields"
+		"AuthChangeFormFields": "ConfirmEditHooks::onAuthChangeFormFields",
+		"BeforePageDisplay": "ConfirmEditHooks::AddScript"
 	},
 	"AuthManagerAutoConfig": {
 		"preauth": {

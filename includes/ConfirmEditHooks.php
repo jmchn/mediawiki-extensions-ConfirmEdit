@@ -39,6 +39,12 @@ class ConfirmEditHooks {
 			$user, $minorEdit );
 	}
 
+
+	public static function AddScript( $out, $skin
+	) {
+		return self::getInstance()->AddScript( $out, $skin);
+	}
+
 	/**
 	 * PageContentSaveComplete hook handler.
 	 * Clear IP whitelist cache on page saves for [[MediaWiki:Captcha-ip-whitelist]].
